@@ -1,0 +1,40 @@
+Advanced Features: PostgreSQL supports advanced database features like JSONB fields, full-text search, and array fields, which are well-integrated with Django's ORM (Object-Relational Mapping). These features can be very useful for more complex applications.
+Data Integrity and Conformance: PostgreSQL is known for its strict adherence to SQL standards and data integrity. It has better support for constraints and sophisticated data types, which can lead to more reliable data handling.
+Django Compatibility: Django's ORM is known to work particularly well with PostgreSQL. Many of Django's advanced database features are specifically designed with PostgreSQL in mind.
+Performance with Complex Queries: PostgreSQL generally offers better performance for complex queries, especially when dealing with large datasets
+
+
+if pdadmin refused to start follow this process
+I found the same issue when upgrading to pgAdmin 4 (v1.6). On Windows I found that clearing
+ out the content 
+inside C:\Users\%USERNAME%\AppData\Roaming\pgAdmin\sessions folder fixed the issue for me
+if it does not work there is another file inside the session folder which would have the current data
+delete it
+
+after configuring postgres install psycopg2
+
+postgres configuration
+
+DATABASES = {
+    'default': {
+        'ENGINE': "django.db.backends.postgresql",
+        'NAME': 'booknride',
+        'USER': 'postgres',
+        'PASSWORD': 'Letmein123',
+        'HOST': 'localhost',
+    }
+}
+
+
+
+db configuration for my sql and you have to install mysqlclient before running migration
+DATABASES = {
+    'default': {
+        'ENGINE': "django.db.backends.mysql",
+        'NAME': 'hotelDB',
+        'USER': 'root',
+        'PASSWORD': 'Nedva@54',
+        'HOST': 'localhost',
+    }
+}
+when you configure mysql install pip install mysqlclient
