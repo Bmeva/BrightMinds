@@ -38,12 +38,11 @@ function CustomNavbar() {
 
                         <NavDropdown title="Dropdown" id="nav-dropdown">
                             {/* Use 'as={Link}' in NavDropdown.Item to integrate React Router Link */}
-                            <NavDropdown.Item as={Link} to="/create">Login</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/userreg">Regis</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/Register">Teachers</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item as={Link} to="/UpdateCredentials">Dashboard</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/Register">Logout</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/userDash">Dashboard</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/login">Logout</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
 
@@ -56,7 +55,8 @@ function CustomNavbar() {
                             {/* Dropdown items */}
                             <NavDropdown.Item as={Link} to="/profile">Profile</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/settings">Settings</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/logout">Logout</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/login">Login</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/login">Logout</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={Link} to="/help">Help</NavDropdown.Item>
                         </NavDropdown>
