@@ -12,7 +12,7 @@ function CustomNavbar() {
             <Container>
                 {/* <Navbar.Brand href="index.html"> */}
                 <Navbar.Brand as={Link} to="/">
-                    Furni<span>.</span>
+                    BrightMinds<span>.</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarsFurni" />
                 <Navbar.Collapse id="navbarsFurni">
@@ -36,12 +36,21 @@ function CustomNavbar() {
                             <Nav.Link>Contact us</Nav.Link>
                         </LinkContainer>
 
-                        <NavDropdown title="Dropdown" id="nav-dropdown">
+                        <NavDropdown title="Student" id="nav-dropdown">
                             {/* Use 'as={Link}' in NavDropdown.Item to integrate React Router Link */}
-                            <NavDropdown.Item as={Link} to="/userreg">Regis</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} to="/Register">Teachers</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/userreg">Register</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item as={Link} to="/userDash">Dashboard</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/login">Logout</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/login">Login</NavDropdown.Item>
+                        </NavDropdown>
+
+                        <NavDropdown title="Teacher" id="nav-dropdown">
+                            {/* Use 'as={Link}' in NavDropdown.Item to integrate React Router Link */}
+                            <NavDropdown.Item as={Link} to="/teacherreg">Register</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/teacherlogin">Login</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item as={Link} to="/teacherDashboard">Dashboard</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/login">Logout</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>

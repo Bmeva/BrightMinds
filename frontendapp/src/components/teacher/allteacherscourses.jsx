@@ -3,27 +3,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import SidebarDash from './sidebar';
-import Dropdownbtn from './dropdowns'
+import TeacherSidebarDash from './teachersidebar';
+import Dropdownbtn from '../dropdowns'
 import Table from 'react-bootstrap/Table';
 
 
 
-function Favcourses() {
+function Allteacherscourses() {
     return (
 
         <div className="blog-section">
 
             <Dropdownbtn />
 
-            <div className="container mt-2 mb-1">
+            <div className="container mt-2" style={{ marginBottom: '7rem' }}>
                 <div className='row'>
 
-                    <SidebarDash />
+                    <TeacherSidebarDash />
 
                     <div className='col-md-8'>
                         <Card style={{ width: '45rem' }} className='mb-1'>
-                            <Card.Header>Favourite Courses</Card.Header>
+                            <Card.Header>All Courses</Card.Header>
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
@@ -76,4 +76,4 @@ function Favcourses() {
     );
 }
 
-export default Favcourses;
+export default Allteacherscourses;

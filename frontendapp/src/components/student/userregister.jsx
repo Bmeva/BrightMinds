@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'; // Use if you're using React Router for links
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Ensure Font Awesome is imported for icons
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/stylefol/style.css';
+import '../../assets/stylefol/style.css';
 
 function Userreg() {
     return (
@@ -34,7 +33,12 @@ function Userreg() {
                                 </Col>
                                 <Col className="col-auto">
                                     <Form.Control type="text" placeholder="Interest" />
+                                    <Form.Text id="passwordHelpBlock" muted>
+                                        python, php etc
+                                    </Form.Text>
                                 </Col>
+
+
                                 <Col className="col-auto">
                                     <Button className="btn btn-primary">
                                         Register

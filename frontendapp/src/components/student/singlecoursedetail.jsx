@@ -2,16 +2,14 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import couch2 from '../assets/images/couch2.jpg';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-
 import Accordion from 'react-bootstrap/Accordion';
-
+import ss3 from '../../assets/images/ss3.jpg';
 import { Link } from 'react-router-dom';
-import ss2 from '../assets/images/ss2.jpg';
-import ss3 from '../assets/images/ss3.jpg';
-import ss4 from '../assets/images/ss4.jpg';
+import ss2 from '../../assets/images/ss2.jpg';
+import ss4 from '../../assets/images/ss4.jpg';
+
 
 
 function SinglecourseDetail() {
@@ -23,6 +21,7 @@ function SinglecourseDetail() {
             < div className="hero" >
                 <div className="container">
                     <div className="row justify-content-between">
+
                         <div className="col-lg-5">
                             <div className="intro-excerpt">
                                 <h1>
@@ -57,6 +56,8 @@ function SinglecourseDetail() {
                     </div>
                 </div>
             </div >
+
+
 
             <div className="container mt-2 mb-1">
                 <div className='row'>

@@ -1,10 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import SidebarDash from './sidebar';
-import Dropdownbtn from './dropdowns'
+import Dropdownbtn from '../dropdowns'
 import Table from 'react-bootstrap/Table';
 
 

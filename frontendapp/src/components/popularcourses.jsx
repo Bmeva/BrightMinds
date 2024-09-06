@@ -6,7 +6,7 @@ import ss3 from '../assets/images/ss3.jpg';
 import ss4 from '../assets/images/ss4.jpg';
 
 
-function BlogSection() {
+function Popularcourses() {
     return (
 
 
@@ -39,7 +39,7 @@ function BlogSection() {
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <Link to='/'>Kristin Watson</Link>
+                                        by <Link to='/teacherdetail/1'>Kristin Watson</Link>
                                     </span>{' '}
                                     <span>
                                         on <Link to='/Profile' style={{ color: 'red' }}>Dec 19, 2021</Link>
@@ -64,7 +64,7 @@ function BlogSection() {
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <Link to='/Profile'>Robert Fox</Link>
+                                        by <Link to='/teacherdetail/1'>Robert Fox</Link>
                                     </span>{' '}
                                     <span>
                                         on <a href="#!" style={{ color: 'red' }}>Dec 15, 2021</a>
@@ -89,10 +89,10 @@ function BlogSection() {
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <a href="#!">Kristin Watson</a>
+                                        by <Link to='/teacherdetail/1'>Kristin Watson</Link>
                                     </span>{' '}
                                     <span>
-                                        on <a href="#!" style={{ color: 'red' }}>Dec 12, 2021</a>
+                                        on <Link to='/' style={{ color: 'red' }}>Dec 12, 2021</Link>
                                     </span>
                                 </div>
                             </div>
@@ -105,4 +105,4 @@ function BlogSection() {
     );
 }
 
-export default BlogSection;
+export default Popularcourses;

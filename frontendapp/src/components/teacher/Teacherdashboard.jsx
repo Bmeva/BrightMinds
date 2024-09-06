@@ -3,16 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import SidebarDash from './sidebar';
-import Dropdownbtn from './dropdowns'
+import TeacherSidebarDash from './teachersidebar';
+import Dropdownbtn from '../dropdowns';
+
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import cyber from '../assets/images/cyber.jpg';
-import homesc from '../assets/images/homesc.jpg';
+
+import cyber from '../../assets/images/cyber.jpg';
+import homesc from '../../assets/images/homesc.jpg';
 
 
 
-function UserDashboard() {
+function TeacherDashboard() {
     return (
 
         <div className="blog-section">
@@ -22,7 +24,7 @@ function UserDashboard() {
             <div className="container mt-2 mb-1">
                 <div className='row'>
 
-                    <SidebarDash />
+                    <TeacherSidebarDash />
 
                     <div className='col-md-8'>
 
@@ -131,4 +133,4 @@ function UserDashboard() {
     );
 }
 
-export default UserDashboard;
+export default TeacherDashboard;

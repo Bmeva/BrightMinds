@@ -10,7 +10,7 @@ import javascript from '../assets/images/javascript.jpg';
 import cyber from '../assets/images/cyber.jpg';
 import homesc from '../assets/images/homesc.jpg';
 import marketing from '../assets/images/marketing.jpg';
-import BlogSection from './popularcourses';
+import Popularcourses from './popularcourses';
 import '../assets/stylefol/style.css';
 import Bcategories from './categories';
 import Hero from './hero';
@@ -61,6 +61,7 @@ function Homepage() {
                                 <Card.Text className="card-text">
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
+                                    <Link to='/teacherdetail/1'><p><small>By Evans</small></p></Link>
                                 </Card.Text>
                                 <Link to='/post'> <Button variant="primary" className="btn-secondary">Go somewhere</Button></Link>
                             </Card.Body>
@@ -77,6 +78,7 @@ function Homepage() {
                                 <Card.Text className="card-text">
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
+                                    <Link to='/teacherdetail/1'><p><small>By Evans</small></p></Link>
                                 </Card.Text>
                                 <Link to='/post'> <Button variant="primary" className="btn-secondary">Go somewhere</Button></Link>
                             </Card.Body>
@@ -97,6 +99,7 @@ function Homepage() {
                                 <Card.Text className="card-text">
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
+                                    <Link to='/teacherdetail/1'><p><small>By Evans</small></p></Link>
                                 </Card.Text>
                                 <Link to='/post'> <Button variant="primary" className="btn-secondary">Go somewhere</Button></Link>
                             </Card.Body>
@@ -113,6 +116,7 @@ function Homepage() {
                                 <Card.Text className="card-text">
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
+                                    <Link to='/teacherdetail/1'><p><small>By Evans</small></p></Link>
                                 </Card.Text>
                                 <Link to='/post'>  <Button variant="primary" className="btn-secondary">Go somewhere</Button></Link>
                             </Card.Body>
@@ -129,6 +133,7 @@ function Homepage() {
                                 <Card.Text className="card-text">
                                     Some quick example text to build on the card title and make up the
                                     bulk of the card's content.
+                                    <Link to='/teacherdetail/1'><p><small>By Evans</small></p></Link>
                                 </Card.Text>
                                 <Link to='/post'> <Button variant="primary" className="btn-secondary">Go somewhere</Button></Link>
                             </Card.Body>
@@ -140,7 +145,7 @@ function Homepage() {
             {/* Recent Blog section */}
             {/* <Bcategories /> */}
 
-            <BlogSection />
+            <Popularcourses />
 
 
             {/* Start Product Section */}

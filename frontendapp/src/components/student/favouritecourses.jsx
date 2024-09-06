@@ -2,29 +2,27 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import SidebarDash from './student/sidebar';
-import Dropdownbtn from './dropdowns'
+import SidebarDash from '../student/sidebar';
+import Dropdownbtn from '../dropdowns'
 import Table from 'react-bootstrap/Table';
 
 
 
-function Recomendedcourses() {
+function Favcourses() {
     return (
 
         <div className="blog-section">
 
             <Dropdownbtn />
 
-            <div className="container mt-2 mb-5">
+            <div className="container mt-2 mb-1">
                 <div className='row'>
 
                     <SidebarDash />
 
                     <div className='col-md-8'>
-
-                        <Card style={{ width: '45rem' }} className='mb-5'>
-                            <Card.Header>Recomended Courses</Card.Header>
-
+                        <Card style={{ width: '45rem' }} className='mb-1'>
+                            <Card.Header>Favourite Courses</Card.Header>
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
@@ -77,4 +75,4 @@ function Recomendedcourses() {
     );
 }
 
-export default Recomendedcourses;
+export default Favcourses;

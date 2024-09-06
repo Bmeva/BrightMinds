@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
-import SidebarDash from './sidebar';
-import Dropdownbtn from './dropdowns'
+import TeacherSidebarDash from './teachersidebar';
+import Dropdownbtn from '../dropdowns';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -12,7 +12,7 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function Updatepassword() {
+function Updateteacherpassword() {
     return (
 
         <div className="blog-section">
@@ -22,7 +22,7 @@ function Updatepassword() {
             <div className="container mt-2 mb-5">
                 <div className='row'>
 
-                    <SidebarDash />
+                    <TeacherSidebarDash />
 
                     <div className='col-md-8'>
                         <Card style={{ width: '45rem' }} className='mb-1'>
@@ -62,4 +62,4 @@ function Updatepassword() {
     );
 }
 
-export default Updatepassword;
+export default Updateteacherpassword;

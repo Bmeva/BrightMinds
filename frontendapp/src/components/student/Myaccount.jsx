@@ -3,8 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React from 'react';
 //import ss1 from './assets/images/ss1.jpg'; // Corrected path to the image
-import ss1 from '../assets/images/ss1.jpg';
-import '../assets/stylefol/style.css';
+import ss1 from '../../assets/images/ss1.jpg';
+import '../../assets/stylefol/style.css';
 
 
 function Myaccount() {
