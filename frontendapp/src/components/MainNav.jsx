@@ -20,8 +20,8 @@ function CustomNavbar() {
                         <LinkContainer as={Link} to="/">
                             <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer as={Link} to="/Profile">
-                            <Nav.Link>Profile</Nav.Link>
+                        <LinkContainer as={Link} to="/allcourselist">
+                            <Nav.Link>All Courses</Nav.Link>
                         </LinkContainer>
                         <LinkContainer as={Link} to="/myaccount">
                             <Nav.Link>My account</Nav.Link>

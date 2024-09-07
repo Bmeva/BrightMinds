@@ -10,9 +10,18 @@ import { Link } from 'react-router-dom';
 import ss2 from '../../assets/images/ss2.jpg';
 import ss4 from '../../assets/images/ss4.jpg';
 
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 
 
 function SinglecourseDetail() {
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     let { course_id } = useParams();
     return (
@@ -66,10 +75,10 @@ function SinglecourseDetail() {
                         <Card style={{ width: '30rem' }} className='mb-1'>
                             <Card.Header>Course Video's</Card.Header>
                             <ListGroup variant="flush">
-                                <ListGroup.Item>Introduction<button className='btn btn-sm fas fa-play float-end'></button></ListGroup.Item>
-                                <ListGroup.Item>Introduction to Components<button className='btn btn-sm fas fa-play float-end'></button></ListGroup.Item>
-                                <ListGroup.Item>Class based views<button className='btn btn-sm fas fa-play float-end'></button></ListGroup.Item>
-                                <ListGroup.Item>React router DOm{course_id}<button className='btn btn-sm fas fa-play float-end'></button></ListGroup.Item>
+                                <ListGroup.Item>Introduction<button className='btn btn-sm fas fa-play float-end' onClick={handleShow}></button></ListGroup.Item>
+                                <ListGroup.Item>Introduction to Components<button className='btn btn-sm fas fa-play float-end' onClick={handleShow}></button></ListGroup.Item>
+                                <ListGroup.Item>Class based views<button className='btn btn-sm fas fa-play float-end' onClick={handleShow}></button></ListGroup.Item>
+                                <ListGroup.Item>React router DOm{course_id}<button className='btn btn-sm fas fa-play float-end' onClick={handleShow}></button></ListGroup.Item>
                             </ListGroup>
                         </Card>
 
@@ -78,7 +87,10 @@ function SinglecourseDetail() {
                     <div className='col-md-6'>
 
                         <Card style={{ width: '30rem' }} className='mb-1'>
-                            <Card.Header>WHat you would learn</Card.Header>
+                            <Card.Header>WHat you would learn  <Button variant="primary" onClick={handleShow}>
+                                Launch demo modal
+                            </Button>
+                            </Card.Header>
 
                             <Accordion>
                                 <Accordion.Item eventKey="0">
@@ -128,6 +140,41 @@ function SinglecourseDetail() {
 
                 </div>
             </div>
+
+            {/* Modal start */}
+
+            <div>
+
+                <Modal show={show} onHide={handleClose} className='modal-lg'>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Modal heading</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/XwENAAx2Pp8"
+                                title="YouTube video" allowfullscreen></iframe>
+
+                            {/* this is the original link
+                            https://www.youtube.com/watch?v=XwENAAx2Pp8
+
+                            while embeding change your url to embed/XwENAAx2Pp8 */}
+                        </div>
+
+
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                        <Button variant="primary" onClick={handleClose}>
+                            Save Changes
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+            </div>
+            {/* Modal end */}
+
 
 
             <div className="blog-section mb-5">

@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-import ss2 from '../assets/images/ss2.jpg';
-import ss3 from '../assets/images/ss3.jpg';
-import ss4 from '../assets/images/ss4.jpg';
+import ss2 from '../../assets/images/ss2.jpg';
+import ss3 from '../../assets/images/ss3.jpg';
+import ss4 from '../../assets/images/ss4.jpg';
 
 
-function Bcategories() {
+function Allcategoiries() {
     return (
 
 
@@ -14,12 +14,12 @@ function Bcategories() {
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md-6">
-                        <h2 className="section-title">Top Categories</h2> <small>50</small>
+                        <h2 className="section-title">All Categories</h2>
                     </div>
                     <div className="col-md-4 text-start text-md-end">
-                        <Link to="/allcategoiries" className="more" style={{ color: '#7e1d1d' }}>
-                            View All Categories
-                        </Link>
+                        <a href="https://www.youtube.com/@evans-fullstack-tutorial" className="more" style={{ color: '#7e1d1d' }}>
+                            View All Courses
+                        </a>
                     </div>
                 </div>
 
@@ -107,6 +107,7 @@ function Bcategories() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
+
                                     <Link to='/singlecategory/1'>Business</Link>
                                 </h3>
 
@@ -124,6 +125,7 @@ function Bcategories() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
+
                                     <Link to='/singlecategory/1'>Marketing</Link>
                                 </h3>
 
@@ -141,6 +143,7 @@ function Bcategories() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
+
                                     <Link to='/singlecategory/1'>Automation</Link>
                                 </h3>
 
@@ -158,6 +161,7 @@ function Bcategories() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
+
                                     <Link to='/singlecategory/1'>Creative Arts</Link>
                                 </h3>
 
@@ -171,4 +175,4 @@ function Bcategories() {
     );
 }
 
-export default Bcategories;
+export default Allcategoiries;

@@ -23,7 +23,7 @@ function Whyus() {
                         <h2 className="section-title">Why Choose Us</h2>
                         <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
 
-                        <div className="row my-5">
+                        <div className="row my-2">
                             <div className="col-6 col-md-6">
                                 <div className="feature">
                                     <div className="icon">

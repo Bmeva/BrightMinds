@@ -30,7 +30,7 @@ function Teacherdetail() {
 
                         <div className="col-lg-5">
                             <div className="img-wrap">
-                                <img src={person_2} alt="Image" className="img-fluid" />
+                                <img src={person_2} alt="theyou" className="img-fluid" />
                                 <small>Instructor since 2020. 2500 students, 5 courses</small>
                                 <p><small>Rating:</small></p>
                             </div>
@@ -43,7 +43,7 @@ function Teacherdetail() {
             <div className="untree_co-section">
                 <div className="container">
 
-                    <div className="row mb-5">
+                    <div className="row">
                         <div className="col-lg-5 mx-auto text-center">
                             <h2 className="section-title">Course List</h2>
                         </div>
@@ -53,29 +53,29 @@ function Teacherdetail() {
 
 
                         <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                            <h3 clas><Link to='/ScourseDetail/1'><span className="">Python</span> JS</Link></h3>
-                            <img src={ss2} className="img-fluid mb-1" />
+                            <h3 clas><Link to='/ScourseDetail/1' className='custom-link '><span className="">Python</span> JS</Link></h3>
+                            <img src={ss2} className="img-fluid mb-1" alt='Yourname' />
                             <span className="d-block position mb-1">Evans, Taku.</span>
                             <p className="mb-0"><Link to='/ScourseDetail/1' className="more dark">View Course <span className="icon-arrow_forward"></span></Link></p>
                         </div>
 
                         <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                            <h3 clas><Link to='/ScourseDetail/1'><span className="">React</span> JS</Link></h3>
-                            <img src={ss3} className="img-fluid mb-1" />
+                            <h3 clas><Link to='/ScourseDetail/1' className='custom-link '><span className="">React</span> JS</Link></h3>
+                            <img src={ss3} className="img-fluid mb-1" alt='Yourname' />
                             <span className="d-block position mb-1">Evans, Taku.</span>
                             <p className="mb-0"><Link to='/ScourseDetail/1' className="more dark">View Course <span className="icon-arrow_forward"></span></Link></p>
                         </div>
 
                         <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                            <h3 clas><Link to='/ScourseDetail/1'><span className="">Java</span> JS</Link></h3>
-                            <img src={ss2} className="img-fluid mb-1" />
+                            <h3 clas><Link to='/ScourseDetail/1' className='custom-link '><span className="">Java</span> JS</Link></h3>
+                            <img src={ss2} className="img-fluid mb-1" alt='Yourname' />
                             <span className="d-block position mb-1">Evans, Taku.</span>
                             <p className="mb-0"><Link to='/ScourseDetail/1' className="more dark">View Course <span className="icon-arrow_forward"></span></Link></p>
                         </div>
 
                         <div className="col-12 col-md-6 col-lg-3 mb-5 mb-md-0">
-                            <h3 clas><Link to='/ScourseDetail/1'><span className="">Javascript</span> JS</Link></h3>
-                            <img src={ss3} className="img-fluid mb-1" />
+                            <h3 clas><Link to='/ScourseDetail/1' className='custom-link '><span className="">Javascript</span> JS</Link></h3>
+                            <img src={ss3} className="img-fluid mb-1" alt='Yourname' />
                             <span className="d-block position mb-1">Evans, Taku.</span>
                             <p className="mb-0"><Link to='/ScourseDetail/1' className="more dark">View Course <span className="icon-arrow_forward"></span></Link></p>
                         </div>

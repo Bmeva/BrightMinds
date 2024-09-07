@@ -14,12 +14,12 @@ function Topinstructors() {
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md-4">
-                        <h2 className="section-title">Top Instructors</h2>
+                        <Link to='/topinstructorslist' className='custom-link '><h2 className="section-title">Top Instructors</h2></Link><small>20</small>
                     </div>
                     <div className="col-md-6 text-start text-md-end">
-                        <a href="#!" className="more" style={{ color: '#7e1d1d' }}>
+                        <Link to='/allcourselist' className="more" style={{ color: '#7e1d1d' }}>
                             View All Courses
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -35,15 +35,23 @@ function Topinstructors() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
-                                    <Link to='/plan'>First Time Home Owner Ideas</Link>
+                                    <Link to='/teacherdetail/1'>First Time Home Owner Ideas</Link>
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <Link to='/'>Kristin Watson</Link>
+                                        by <Link to='/teacherdetail/1'>Kristin Watson</Link>
                                     </span>{' '}
                                     <span>
-                                        on <Link to='/Profile' style={{ color: 'red' }}>Dec 19, 2021</Link>
+                                        on <Link to='/Profile' style={{ color: 'red' }}>Dec 19, 2021</Link> 4/5**
+
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -60,15 +68,19 @@ function Topinstructors() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
-                                    <Link to='/myaccount'>How To Keep Your Furniture Clean</Link>
+                                    <Link to='/teacherdetail/1'>How To Keep Your Furniture Clean</Link>
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <Link to='/Profile'>Robert Fox</Link>
+                                        by <Link to='/teacherdetail/1'>Robert Fox</Link>
                                     </span>{' '}
                                     <span>
-                                        on <a href="#!" style={{ color: 'red' }}>Dec 15, 2021</a>
+                                        on <a href="#!" style={{ color: 'red' }}>Dec 15, 2021</a> 4/5**
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,15 +97,20 @@ function Topinstructors() {
                             </a>
                             <div className="post-content-entry">
                                 <h3>
-                                    <a href="#!">Small Space Furniture Apartment Ideas</a>
+                                    <Link to='/teacherdetail/1'>Small Space Furniture Apartment Ideas</Link>
                                 </h3>
                                 <div className="meta">
                                     <span>
-                                        by <a href="#!">Kristin Watson</a>
+                                        by <Link to='/teacherdetail/1'>Kristin Watson</Link>
                                     </span>{' '}
                                     <span>
-                                        on <a href="#!" style={{ color: 'red' }}>Dec 12, 2021</a>
+                                        on <a href="#!" style={{ color: 'red' }}>Dec 12, 2021</a> 4/5**
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

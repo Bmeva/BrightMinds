@@ -24,6 +24,12 @@ import Mystudents from './components/teacher/mystudents';
 import TeacherProfileset from './components/teacher/teacherprofilesetting'
 import Updateteacherpassword from './components/teacher/teacherupdatepassword';
 import Teacherdetail from './components/teacher/teacherdetail';
+import Popularcourselist from './components/coursefulllist/popularcourselist'
+import Latestcourselist from './components/coursefulllist/latestcourselist'
+import Allcourselist from './components/coursefulllist/allcourselist'
+import Topinstructorslist from './components/coursefulllist/topinstructorlist'
+import Allcategoiries from './components/coursefulllist/allcategories'
+import Singlecategory from './components/coursefulllist/singlecategory'
 
 function App() {
   return (
@@ -57,10 +63,13 @@ function App() {
         <Route path='/mystudents' element={<Mystudents />} />
         <Route path='/teacherProfileset' element={<TeacherProfileset />} />
         <Route path='/updateteacherpassword' element={<Updateteacherpassword />} />
+        <Route path='/popularcourselist' element={<Popularcourselist />} />
+        <Route path='/latestcourselist' element={<Latestcourselist />} />
+        <Route path='/allcourselist' element={<Allcourselist />} />
+        <Route path='/topinstructorslist' element={<Topinstructorslist />} />
 
-
-
-
+        <Route path='/allcategoiries' element={<Allcategoiries />} />
+        <Route path='/singlecategory/:single_id' element={<Singlecategory />} />
 
 
 

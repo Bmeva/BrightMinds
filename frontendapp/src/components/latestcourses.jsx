@@ -6,7 +6,7 @@ import ss3 from '../assets/images/ss3.jpg';
 import ss4 from '../assets/images/ss4.jpg';
 
 
-function Popularcourses() {
+function Latestcourses() {
     return (
 
 
@@ -14,12 +14,12 @@ function Popularcourses() {
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md-4">
-                        <h2 className="section-title">Popular Courses</h2>
+                        <Link to='/latestcourselist' className='custom-link '> <h2 className="section-title">Latest Courses</h2></Link>
                     </div>
                     <div className="col-md-6 text-start text-md-end">
-                        <a href="#!" className="more" style={{ color: '#7e1d1d' }}>
+                        <Link to='/allcourselist' className="more" style={{ color: '#7e1d1d' }}>
                             View All Courses
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -44,6 +44,10 @@ function Popularcourses() {
                                     <span>
                                         on <Link to='/Profile' style={{ color: 'red' }}>Dec 19, 2021</Link>
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +73,10 @@ function Popularcourses() {
                                     <span>
                                         on <a href="#!" style={{ color: 'red' }}>Dec 15, 2021</a>
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -94,6 +102,10 @@ function Popularcourses() {
                                     <span>
                                         on <Link to='/' style={{ color: 'red' }}>Dec 12, 2021</Link>
                                     </span>
+                                    <div className='mb-2'>
+                                        <span>Rating: 4/5</span>...
+                                        <span>Students: 2000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,4 +117,4 @@ function Popularcourses() {
     );
 }
 
-export default Popularcourses;
+export default Latestcourses;
